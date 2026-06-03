@@ -1,0 +1,28 @@
+{
+  "name": "issue-triage-action",
+  "version": "1.0.0",
+  "description": "新規Issueに自動でラベル付け・優先度分類・担当者アサインを行うGitHub Action",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test src/__tests__/",
+    "lint": "echo 'No linter configured yet'"
+  },
+  "keywords": [
+    "github-action",
+    "issue-triage",
+    "automation",
+    "labeling",
+    "open-source"
+  ],
+  "author": "hihutuka",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hihutuka/issue-triage-action"
+  }
+}

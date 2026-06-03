@@ -1,0 +1,32 @@
+name: 'Issue Triage Action'
+description: '新規Issueに自動でラベル付け・優先度分類・担当者アサインを行うGitHub Action'
+author: 'hihutuka'
+
+branding:
+  icon: 'tag'
+  color: 'blue'
+
+inputs:
+  github-token:
+    description: 'GitHub Token for API access'
+    required: true
+  config-path:
+    description: 'Path to the triage configuration file'
+    required: false
+    default: '.github/issue-triage.yml'
+  default-label:
+    description: 'Default label when no keywords match'
+    required: false
+    default: 'triage'
+  enable-priority:
+    description: 'Enable automatic priority labeling'
+    required: false
+    default: 'true'
+  enable-assign:
+    description: 'Enable automatic assignee assignment'
+    required: false
+    default: 'true'
+
+runs:
+  using: 'node20'
+  main: 'src/index.js'
