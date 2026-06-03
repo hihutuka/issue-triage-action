@@ -4,7 +4,7 @@
   "description": "新規Issueに自動でラベル付け・優先度分類・担当者アサインを行うGitHub Action",
   "main": "src/index.js",
   "scripts": {
-    "test": "node --test src/__tests__/",
+    "test": "node --test ./src/__tests__/",
     "lint": "echo 'No linter configured yet'"
   },
   "keywords": [
